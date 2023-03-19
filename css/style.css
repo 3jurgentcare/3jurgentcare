@@ -405,6 +405,7 @@ a:focus {
 }
 
 .navbar-brand {
+	justify-content: left;
 	margin-top: 10px;
 }
 
