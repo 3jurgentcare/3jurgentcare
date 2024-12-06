@@ -1465,3 +1465,16 @@ a:focus {
 	opacity: 1;
 }
 /*# sourceMappingURL=style.css.map */
+.privacy-consent {
+	margin-bottom: 30px; /* Add space below the section */
+	padding: 20px; /* Add padding inside the section for better readability */
+	background-color: #f9f9f9; /* Optional: Add a light background to differentiate it */
+	border: 1px solid #e0e0e0; /* Optional: Add a subtle border */
+	border-radius: 8px; /* Optional: Add rounded corners */
+  }
+  
+  .privacy-consent p {
+	margin-bottom: 15px; /* Add space between paragraphs */
+	line-height: 1.6; /* Increase line height for readability */
+  }
+  
