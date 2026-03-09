@@ -1477,4 +1477,131 @@ a:focus {
 	margin-bottom: 15px; /* Add space between paragraphs */
 	line-height: 1.6; /* Increase line height for readability */
   }
-  
+  /* Header and hero polish */
+.header-top-bar {
+	background: linear-gradient(90deg, #1d3768 0%, #244780 100%);
+	font-size: 16px;
+	padding: 12px 0;
+}
+
+.top-bar-info,
+.top-right-bar {
+	margin-bottom: 0;
+}
+
+.top-bar-info li,
+.top-right-bar li {
+	margin-right: 18px;
+}
+
+.top-bar-info li:last-child,
+.top-right-bar li:last-child {
+	margin-right: 0;
+}
+
+.top-bar-info li a,
+.top-right-bar a {
+	color: #f3f7ff;
+	font-weight: 500;
+}
+
+.navigation {
+	background: #ffffff;
+	box-shadow: 0 10px 30px rgba(16, 36, 70, 0.08);
+}
+
+.navbar-brand {
+	margin-top: 0;
+	padding: 10px 0;
+}
+
+.navbar-brand img {
+	max-width: 280px;
+	height: auto;
+}
+
+#navbarmain .nav-link {
+	font-size: 17px;
+	font-weight: 700;
+	padding: 30px 14px;
+	letter-spacing: 0.2px;
+	color: #1f2d3d;
+}
+
+#navbarmain .nav-link:hover,
+#navbarmain .active .nav-link {
+	color: #d41f4d;
+}
+
+#navbarmain .nav-item.nav-cta .nav-link {
+	background: #e12454;
+	color: #fff;
+	border-radius: 999px;
+	padding: 12px 22px;
+	margin-left: 10px;
+	margin-top: 16px;
+}
+
+#navbarmain .nav-item.nav-cta .nav-link:hover {
+	background: #223a66;
+	color: #fff;
+}
+
+.page-title {
+	padding: 150px 0 100px;
+}
+
+.page-title .overlay:before {
+	background: linear-gradient(130deg, rgba(20, 44, 86, 0.88) 0%, rgba(35, 65, 114, 0.78) 100%);
+}
+
+.page-title .block span {
+	font-size: 20px;
+	font-weight: 600;
+	letter-spacing: 0.5px;
+}
+
+.page-title .block h1 {
+	font-size: 64px;
+	line-height: 1.1;
+	text-shadow: 0 8px 24px rgba(0, 0, 0, 0.25);
+}
+
+@media (max-width: 991px) {
+	.navbar-brand img {
+		max-width: 220px;
+	}
+
+	#navbarmain .nav-link {
+		padding: 10px 12px;
+	}
+
+	#navbarmain .nav-item.nav-cta .nav-link {
+		margin: 8px auto 0;
+		display: inline-block;
+	}
+
+	.page-title {
+		padding: 110px 0 70px;
+	}
+
+	.page-title .block h1 {
+		font-size: 44px;
+	}
+}
+
+@media (max-width: 575px) {
+	.header-top-bar {
+		font-size: 14px;
+	}
+
+	.top-bar-info li,
+	.top-right-bar li {
+		display: block;
+		margin-right: 0;
+	}
+
+	.page-title .block h1 {
+		font-size: 36px;
+	}
+}
