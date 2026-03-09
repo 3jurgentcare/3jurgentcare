@@ -1515,9 +1515,44 @@ a:focus {
 	padding: 10px 0;
 }
 
-.navbar-brand img {
-	max-width: 280px;
+.header-logo {
+	max-width: 560px;
+	width: 100%;
 	height: auto;
+}
+
+.brand-lockup {
+	display: flex;
+	align-items: center;
+	gap: 14px;
+}
+
+.brand-mark {
+	max-width: 120px;
+	height: auto;
+}
+
+.brand-text {
+	display: flex;
+	flex-direction: column;
+	line-height: 1;
+}
+
+.brand-title {
+	font-family: "Exo", sans-serif;
+	font-size: 52px;
+	font-weight: 700;
+	letter-spacing: 1px;
+	color: #e12454;
+	text-transform: uppercase;
+}
+
+.brand-subtitle {
+	font-family: "Exo", sans-serif;
+	font-size: 30px;
+	font-weight: 600;
+	color: #10a5da;
+	margin-top: 6px;
 }
 
 #navbarmain .nav-link {
@@ -1568,8 +1603,20 @@ a:focus {
 }
 
 @media (max-width: 991px) {
-	.navbar-brand img {
-		max-width: 220px;
+	.header-logo {
+		max-width: 360px;
+	}
+
+	.brand-mark {
+		max-width: 82px;
+	}
+
+	.brand-title {
+		font-size: 28px;
+	}
+
+	.brand-subtitle {
+		font-size: 18px;
 	}
 
 	#navbarmain .nav-link {
@@ -1591,6 +1638,22 @@ a:focus {
 }
 
 @media (max-width: 575px) {
+	.header-logo {
+		max-width: 260px;
+	}
+
+	.brand-mark {
+		max-width: 68px;
+	}
+
+	.brand-title {
+		font-size: 20px;
+	}
+
+	.brand-subtitle {
+		font-size: 14px;
+	}
+
 	.header-top-bar {
 		font-size: 14px;
 	}
@@ -1604,4 +1667,228 @@ a:focus {
 	.page-title .block h1 {
 		font-size: 36px;
 	}
+}
+
+.clinic-intro {
+	background: #f7fbff;
+	border: 1px solid rgba(34, 58, 102, 0.08);
+	border-radius: 10px;
+	padding: 28px;
+}
+
+.clinic-list li {
+	padding: 8px 0;
+}
+
+.service-grid-card {
+	background: #fff;
+	border: 1px solid rgba(34, 58, 102, 0.08);
+	border-radius: 12px;
+	padding: 24px;
+	box-shadow: 0 8px 24px rgba(21, 40, 82, 0.06);
+	height: 100%;
+}
+
+.service-grid-card h4 {
+	margin-bottom: 10px;
+}
+
+.reviews-awards-section {
+	background: linear-gradient(180deg, #ffffff 0%, #f6fbff 100%);
+	padding-top: 70px;
+	padding-bottom: 70px;
+}
+
+.review-panel,
+.awards-panel {
+	background: #fff;
+	border: 1px solid rgba(34, 58, 102, 0.12);
+	border-radius: 16px;
+	padding: 30px;
+	box-shadow: 0 14px 30px rgba(21, 40, 82, 0.08);
+}
+
+.review-kicker {
+	display: inline-block;
+	font-size: 13px;
+	font-weight: 700;
+	letter-spacing: 1px;
+	text-transform: uppercase;
+	color: #0f8fbc;
+	margin-bottom: 12px;
+}
+
+.review-panel h3,
+.awards-panel h3 {
+	color: #223a66;
+	margin-bottom: 12px;
+}
+
+.live-review-stat {
+	color: #223a66;
+	font-size: 18px;
+}
+
+.five-star-row {
+	color: #f3b41b;
+	font-size: 30px;
+	letter-spacing: 3px;
+	line-height: 1;
+}
+
+.five-star-row strong {
+	color: #223a66;
+	font-size: 30px;
+	letter-spacing: 0;
+	margin-left: 8px;
+	vertical-align: middle;
+}
+
+.google-review-badge {
+	background: #ffffff;
+	border: 1px solid rgba(34, 58, 102, 0.16);
+	border-radius: 12px;
+	padding: 10px 12px;
+	margin-bottom: 14px;
+}
+
+.gr-top {
+	color: #223a66;
+	font-size: 16px;
+	font-weight: 800;
+	letter-spacing: 0.6px;
+	line-height: 1.1;
+	margin-bottom: 2px;
+}
+
+.gr-bottom {
+	display: flex;
+	align-items: baseline;
+	gap: 6px;
+}
+
+.google-word {
+	font-size: 42px;
+	font-weight: 700;
+	line-height: 1;
+	letter-spacing: -1px;
+}
+
+.g-blue {
+	color: #4285f4;
+}
+
+.g-red {
+	color: #ea4335;
+}
+
+.g-yellow {
+	color: #fbbc05;
+}
+
+.g-green {
+	color: #34a853;
+}
+
+.gr-reviews {
+	color: #1f2d3d;
+	font-size: 34px;
+	font-weight: 500;
+	line-height: 1;
+}
+
+.live-review-note {
+	color: #4f6b8a;
+	font-size: 13px;
+	margin-top: 12px;
+}
+
+.award-year-list {
+	display: grid;
+	grid-template-columns: repeat(3, minmax(0, 1fr));
+	gap: 10px;
+	margin-bottom: 14px;
+}
+
+.award-year-item {
+	background: #223a66;
+	color: #fff;
+	text-align: center;
+	padding: 11px 8px;
+	border-radius: 10px;
+	font-weight: 700;
+	font-size: 14px;
+}
+
+.award-source {
+	font-size: 14px;
+	color: #4f6b8a;
+}
+
+.award-photo-grid {
+	display: grid;
+	grid-template-columns: repeat(3, minmax(0, 1fr));
+	gap: 12px;
+	margin-bottom: 14px;
+}
+
+.award-photo-card {
+	margin: 0;
+	background: #f6f9ff;
+	border: 1px solid rgba(34, 58, 102, 0.12);
+	border-radius: 10px;
+	overflow: hidden;
+}
+
+.award-photo-card img {
+	width: 100%;
+	height: 220px;
+	object-fit: contain;
+	object-position: center;
+	background: #ffffff;
+	display: block;
+}
+
+.award-photo-card figcaption {
+	font-size: 12px;
+	font-weight: 700;
+	color: #223a66;
+	text-align: center;
+	padding: 8px 6px;
+}
+
+@media (max-width: 575px) {
+	.award-year-list {
+		grid-template-columns: 1fr;
+	}
+
+	.award-photo-grid {
+		grid-template-columns: 1fr;
+	}
+
+	.google-word {
+		font-size: 30px;
+	}
+
+	.gr-reviews {
+		font-size: 24px;
+	}
+}
+
+.seo-note {
+	font-size: 15px;
+	color: #4f6b8a;
+}
+
+.hours-panel {
+	background: #223a66;
+	color: #fff;
+	border-radius: 12px;
+	padding: 24px;
+}
+
+.hours-panel h4,
+.hours-panel p,
+.hours-panel li {
+	color: #fff;
 }
