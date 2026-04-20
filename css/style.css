@@ -1536,13 +1536,17 @@ a:focus {
 
 .navbar-brand {
 	margin-top: 0;
-	padding: 10px 0;
+	padding: 8px 0;
+	margin-right: 18px;
+	flex: 0 0 auto;
+	max-width: 340px;
 }
 
 .header-logo {
-	max-width: 560px;
-	width: 100%;
+	max-width: 340px;
+	width: auto;
 	height: auto;
+	display: block;
 }
 
 .brand-lockup {
@@ -1580,9 +1584,9 @@ a:focus {
 }
 
 #navbarmain .nav-link {
-	font-size: 17px;
+	font-size: 15px;
 	font-weight: 700;
-	padding: 30px 14px;
+	padding: 30px 10px;
 	letter-spacing: 0.2px;
 	color: #1f2d3d;
 }
@@ -1628,7 +1632,7 @@ a:focus {
 
 @media (max-width: 991px) {
 	.header-logo {
-		max-width: 360px;
+		max-width: 270px;
 	}
 
 	.brand-mark {
@@ -1663,7 +1667,7 @@ a:focus {
 
 @media (max-width: 575px) {
 	.header-logo {
-		max-width: 260px;
+		max-width: 210px;
 	}
 
 	.brand-mark {
@@ -1896,6 +1900,108 @@ a:focus {
 
 	.gr-reviews {
 		font-size: 24px;
+	}
+}
+
+/* Mobile optimization pass */
+@media (max-width: 767px) {
+	.section {
+		padding: 62px 0;
+	}
+
+	.page-title {
+		padding: 90px 0 55px;
+	}
+
+	.page-title .block h1 {
+		font-size: 34px;
+	}
+
+	.header-top-bar {
+		padding: 10px 0;
+	}
+
+	.top-bar-info li a,
+	.top-right-bar a {
+		font-size: 13px;
+		line-height: 1.5;
+	}
+
+	.top-right-bar {
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: flex-start;
+		gap: 8px;
+	}
+
+	.navbar-brand {
+		padding: 6px 0;
+	}
+
+	.header-logo {
+		max-width: 300px;
+	}
+
+	.banner .block {
+		padding: 56px 0 80px;
+	}
+
+	.banner .block h1 {
+		font-size: 40px;
+		line-height: 1.15;
+	}
+
+	.banner .block p {
+		padding-right: 0 !important;
+	}
+
+	.btn-container .btn {
+		display: block;
+		width: 100%;
+		margin: 0 0 10px 0 !important;
+		text-align: center;
+	}
+
+	.features {
+		margin-top: 18px;
+	}
+
+	.feature-block {
+		display: block !important;
+	}
+
+	.feature-item {
+		margin: 0 0 16px 0 !important;
+		padding: 24px 20px;
+	}
+
+	.feature-item-link .feature-link-label {
+		padding-top: 8px;
+	}
+
+	.service-grid-link,
+	.service-grid-card {
+		padding: 20px;
+	}
+
+	.google-word {
+		font-size: 32px;
+	}
+
+	.gr-reviews {
+		font-size: 28px;
+	}
+
+	.award-photo-card img {
+		height: 180px;
+	}
+
+	.clinic-intro {
+		padding: 20px;
+	}
+
+	iframe[title="3J Urgent Care Google Map"] {
+		height: 280px;
 	}
 }
 
@@ -2147,4 +2253,21 @@ h6 {
 .widget .footer-menu a:hover,
 .footer a:hover {
 	color: #9ddfff;
+}
+/* Mobile-friendly optimizations */
+@media (max-width: 768px) {
+	.btn {
+		min-height: 48px;
+		font-size: 16px;
+		padding: 1rem 2.5rem;
+	}
+	h1 {
+		font-size: 28px;
+	}
+	h2 {
+		font-size: 24px;
+	}
+	.banner .block p {
+		font-size: 16px;
+	}
 }
